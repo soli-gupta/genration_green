@@ -1,0 +1,56 @@
+
+$font-body:'OPPOsans';
+
+/* color variables */
+$black:#000000;
+$white:#ffffff;
+$neon-blue: #1DCDFE;
+$neon-g-one : #21CFB3;
+$neon-g-two : #34F5C6;
+$btn-primary-color : #2F455C;
+$text-black : #414042; 
+$text-gray : #808285;
+$text-gray-two : #D1D3D4;
+$gradient-one : linear-gradient(97deg, #1DCDFE -2.73%, #34F5C6 123.82%);
+$gradient-two : linear-gradient(277deg, #1DCDFE -23.82%, #34F5C6 102.73%);
+
+
+//font sizes
+$font-64 : 4rem;
+$font-60 : 3.75rem;
+$font-48 : 3rem;
+$font-40 : 2.5rem;
+$font-38 : 2.375rem;
+$font-35 : 2.188rem;
+$font-36 : 2.25rem;
+$font-30 : 1.875rem;
+$font-32 : 2rem;
+$font-24 : 1.5rem;
+$font-22 : 1.375rem;
+$font-20 : 1.25rem;
+$font-18 : 1.125rem;
+$font-base : 1rem;
+$font-14 : 0.875rem;
+
+//flex divisions
+$flex-3 : 0 0 33.33%;
+$flex-4 : 0 0 25%;
+$flex-2 : 0 0 50%;
+$flex-1 : 0 0 100%;
+
+//screen-sizes 
+$mobile : 480px;
+$mobile-landscape : 768px;
+$tablet : 834px;
+$tablet-landscape : 1024px;
+$mid-pc : 1150px;
+$mac-pc : 1400px;
+//transition
+$transition : 0.4s ease-in-out all;
+
+//border-radius 
+$common-radius : 14px;
+
+
+//sectionpadding
+$sec-padding : 64px 0;

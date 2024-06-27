@@ -1,0 +1,174 @@
+*{margin: 0; padding: 0; box-sizing: border-box; -webkit-box-sizing: border-box;
+    font-family: $font-body ;}
+/*common css start here*/
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: $font-body ;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    min-width: 300px;
+}
+/*css change*/   
+ul{margin: 0px; padding: 0px; list-style: none;}
+section,nav,footer{
+    width: 100%;
+}
+/*Global wrapper classes*/
+.container{
+    // padding: 0 2rem;
+}
+.mcontainer{
+    width: 100%;
+}
+.w90{
+    width: 90%;
+}
+.margin-center{
+    margin: 0 auto;
+}
+.center-text{
+    text-align: center;
+}
+.common-headings{
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 55%;
+    @media only screen and (max-width : $mid-pc){
+        width: 75%;
+    }
+    @media only screen and (max-width : $tablet){
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    p{
+        color: $text-black;
+        &.common-title{
+            font-size: $font-48;
+            font-weight: bold;
+            text-transform: capitalize;
+            margin-bottom: 16px;
+            @media only screen and (max-width : $mid-pc){
+                font-size: $font-35;
+            }
+            @media only screen and (max-width : $tablet){
+                font-size: $font-30;
+            }
+        }
+        &.common-subtext{
+            font-size: $font-base;
+            line-height: 1.4;
+            font-weight: 400;
+            @media only screen and (max-width : $tablet){
+                font-size: $font-14;
+            }
+        }
+    }
+}
+.common-btn{
+    padding: 20px 45px;
+    text-decoration: none;
+    background: $btn-primary-color;
+    border: 1px solid $btn-primary-color;
+    transition: $transition;
+    display: flex;
+    width: max-content;
+    color: $white;
+    border-radius: $common-radius;
+    justify-content: center;
+    align-items: center;
+    font-size: $font-base;
+    &:hover{
+        border-color: $white;
+    }
+    &.type2{
+        background: transparent;
+        padding: 15px 18px;
+        color: #fff;
+        border: 1px solid #fff;
+        gap: 8px;
+        svg{
+            path{
+                transition: $transition;
+            }
+        }
+        &:hover{
+            background: #fff;
+            color: $btn-primary-color;
+            svg{
+                path{
+                    fill: $btn-primary-color;
+                }
+            }
+        }
+    }
+    &.type-gradient{
+        background: $gradient-one;
+        color: #fff!important;
+        border: none;
+        &:hover{
+            background: $gradient-two;
+        }
+    }
+    @media only screen and (max-width : $tablet){
+        padding: 15px 0;
+        width: 100%;
+    }
+}
+.desktopOnly{
+    display: block;
+    @media only screen and (max-width: 991px){
+        display: none;
+    }
+}
+.mobileOnly{
+    display: none;
+    @media only screen and (max-width: 991px){
+        display: block;
+    }
+}
+
+// Customise bootstrap css
+@media only screen and (min-width: 992px){
+    .container { max-width: 100%; padding: 0 2.5rem;} 
+}
+@media only screen and (min-width: 767px){
+    .container { max-width: 100%; padding: 0 2.5rem;} 
+}
+@media only screen and (min-width : 1200px) {
+    .container { max-width: 100%; padding: 0 2.5rem;} 
+}
+@media only screen and (min-width : 1600px) {
+    .container { max-width: 100%; padding: 0 2.5rem;} 
+}
+
+
+// Customise bootstrap css
+@media only screen and (min-width : 1200px) {
+    .container { max-width: 1200px; } 
+}
+@media only screen and (min-width : 1600px) {
+    .container { max-width: 1500px; } 
+}
+
+/*reset variables*/
+.noDisplay{ display: none;}
+/* iPad portrait mode */
+@media only screen and (min-width: 960px) and (max-width: 1024px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+/* Mobile layout css */
+@media only screen and (max-width: 768px) {
+    
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 768px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {}

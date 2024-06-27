@@ -1,0 +1,422 @@
+.banner-home{
+    background: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding: 100px 0;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -90px;
+    @media only screen and (max-width : $mid-pc){
+        padding: 100px 0 50px 0;
+    }
+    .banner-flex{
+        display: flex;
+        margin-left: 5%;
+        width: 95%;
+        gap: 20px;
+        @media only screen and (max-width : $tablet){
+            flex-wrap: wrap;
+            width: 90%;
+        }
+        .banner-content{
+            width: calc(60% - 20px);
+            color: #fff;
+            @media only screen and (max-width : $mid-pc){
+                width: calc(65% - 20px);
+            }
+            @media only screen and (max-width : $tablet){
+                width: 100%;
+            }
+            .banner-title{
+                font-size: $font-64;
+                font-weight: bolder;
+                @media only screen and (max-width : $mid-pc){
+                    font-size: $font-48;
+                }
+                @media only screen and (max-width : $tablet){
+                    font-size: $font-38;
+                }
+                @media only screen and (max-width : $mobile-landscape){
+                    font-size: $font-35;
+                }
+            }
+            .banner-para{
+                margin: 12px auto 0 0;
+                font-weight: 300;
+                font-size: $font-base;
+                line-height: 1.5;
+                span{
+                    font-weight: bold;
+                }
+            }
+            .bannner-btns{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                @media only screen and (max-width : $tablet){
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 20px auto;
+                }
+                .common-btn.type2{
+                    margin-top: 20px;
+                }
+                .pledge-count{
+                    width: max-content;
+                    text-align: center;
+                    .counters{
+                        display: flex;
+                        justify-content: center;
+                        @media only screen and (max-width : $mid-pc){
+                            justify-content: flex-start;
+                        }
+                        p{
+                            font-size: $font-38;
+                            line-height: 1;
+                            font-weight: 700;
+                            // display: flex;
+                            width: max-content;
+                            overflow: hidden;
+                            height: $font-38;
+                            // display: flex;
+                            // gap: 8px;
+                            span{
+                                display: block;
+                            }
+                            .maincount{
+                                display: block;
+                                width: max-content;
+                                float: left;
+                                margin: 0 5px;
+                            }
+                        }
+                    }
+                    .countsubtext{
+                        margin-top: 10px;
+                        p{
+                            font-size: $font-14;
+                            line-height: normal;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+        .banner-carousel{
+            width: 40%;
+            overflow: hidden;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            @media only screen and (max-width : $mid-pc){
+                width:35%;
+            }
+            @media only screen and (max-width : $tablet){
+                width: 100%;
+            }
+            .banner-swiper{
+                width: calc(100% - 76px);
+                overflow: hidden;
+                .banner-card{
+                    border-radius: $common-radius;
+                    background: linear-gradient(0deg, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0.70) 100%), radial-gradient(230.95% 238.55% at 120.58% 108.19%, rgba(0, 0, 0, 0.20) 36.73%, rgba(0, 0, 0, 0.00) 100%);
+                    backdrop-filter: blur(2.5px);
+                    padding: 25px;
+                    position: relative;
+                    p{
+                        font-size: $font-base;
+                        color: $text-black;
+                        position: relative;
+                        margin-top: -25px;
+                        font-weight: 300;
+                    }
+                    .name-box{
+                        margin-top: 16px;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        img{
+                            height: 60px;
+                            width: 60px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+                        p{
+                            color: $black;
+                            font-size: $font-18;
+                            margin: 0;
+                            font-weight: bold;
+                            &.designation{
+                                font-size: $font-14;
+                                color: $text-black;;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.campaign{
+    padding: $sec-padding;
+    background: url('../images/campaign-bg.svg'),$text-gray-two;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    .logosbx{
+        margin-top: -100px;
+        .logos-box{
+            width: max-content;
+            background: #fff;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            padding: 20px;
+            margin: 0 auto;
+            border-radius: $common-radius;
+            max-width: 90%;
+            @media only screen and (max-width : $tablet){
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: flex-start;
+            }
+            img{
+                display: block;
+                width: 100%;
+                object-fit: contain;
+                @media only screen and (max-width : $tablet){
+                    width: calc(50% - 15px);
+                }
+            }
+        }
+    }
+    .campscontent{
+        padding-top: 60px;
+        .campaign-cards-flex{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            .camp-card{
+                flex:  $flex-3;
+                padding: 0 25px;
+                @media only screen and (max-width : $mid-pc){
+                    padding: 0 15px;
+                }
+                @media only screen and (max-width : $tablet){
+                    flex:$flex-2;
+                    padding: 15px;
+                }
+                @media only screen and (max-width : $mobile){
+                    flex:$flex-1;
+                    padding: 15px 0;
+                }
+                img{
+                    width: 100%;
+                    object-fit: contain;
+                    border-radius: $common-radius;
+                }
+                p{
+                    color: $text-black;
+                    &.camp-title{
+                        margin: 16px auto;
+                        line-height: 1;
+                        font-size: $font-24;
+                        @media only screen and (max-width : $mid-pc){
+                            font-size: $font-20;
+                        }
+                    }
+                    &.camp-subtext{
+                        font-size: $font-base;
+                        margin-bottom: 16px;
+                        line-height: 1.5;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 4;
+                        display: -webkit-box;
+                        overflow: hidden;
+                        @media only screen and (max-width : $tablet){
+                            font-size: $font-14;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.become-hero{
+    .become-content-main{
+        padding: $sec-padding;
+        padding-bottom: 20px;
+        @media only screen and (max-width : $tablet){
+            padding-bottom:0px;
+        }
+        .become-flex{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            @media only screen and (max-width : $tablet){
+                gap: 20px 0;
+            }
+            .img-side-bec{
+                flex: 0 0 50%;
+                @media only screen and (max-width : $mid-pc){
+                    flex: 0 0 50%;
+                }
+                @media only screen and (max-width : $tablet){
+                    flex: 0 0 100%;
+                }
+                img{
+                    width: 100%;
+                    object-fit: contain;
+                    border-radius: $common-radius;
+                }
+            }
+            .become-content{
+                flex:  0 0 45%;
+                margin-left: 5%;
+                @media only screen and (max-width : $mid-pc){
+                    flex:  0 0 47%;
+                    margin-left: 3%;
+                }
+                @media only screen and (max-width : $tablet){
+                    flex:  0 0 100%;
+                    margin-left: 0%;
+                }
+                .become-card{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 24px;
+                    width: 100%;
+                    margin-bottom: 30px;
+                    img{
+                        height: 60px;
+                        width: 60px;
+                        object-fit: contain;
+                        flex-shrink: 0;
+                    }
+                    p{
+                        color: $text-black;
+                        font-size: $font-base;
+                        line-height: 1.4;
+                        @media only screen and (max-width : $tablet){
+                            font-size: $font-14;
+                        }
+                        &.become-title{
+                            color: $black;
+                            font-size: $font-24;
+                            font-weight: bold;
+                            line-height: 1;
+                            @media only screen and (max-width : $tablet){
+                                font-size: $font-20;
+                            }
+                        }
+                        &.become-para{
+                            margin-top: 14px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 8px;
+                            svg{
+                                flex-shrink: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .connect{
+        svg{
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            height: auto;
+        }
+    }
+}
+.cta-box{
+    margin-top: -40px;
+    position: relative;
+    @media only screen and (max-width : $tablet){
+        margin-top: 0;
+    }
+    .cta-main-box{
+        display: flex;
+        @media only screen and (max-width : $tablet){
+            flex-wrap: wrap;
+        }
+        .cta-img{
+            width: 50%;
+            background: url('../images/cta-img.png');
+            padding: $sec-padding;
+            background-position: right;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @media only screen and (max-width : $mid-pc){
+                width: 40%;
+            }
+            @media only screen and (max-width : $tablet){
+                width: 100%;
+                display: none;
+            }
+        }
+        .cta-content{
+            width: 50%;
+            background: url('../images/cta-bg.png');
+            padding: 60px 50px;
+            background-position: left;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @media only screen and (max-width : $mid-pc){
+                width: 60%;
+            }
+            @media only screen and (max-width : $tablet){
+                width: 100%;
+                text-align: center;
+                padding: 30px 10px;
+            }
+            p{
+                color: $text-black;
+                font-size: $font-base;
+                @media only screen and (max-width : $tablet){
+                    font-size: $font-14;
+                }
+                &.cta-title{
+                    color: $btn-primary-color;
+                    font-size: $font-24;
+                    font-weight: bold;
+                    @media only screen and (max-width : $tablet){
+                        font-size: $font-20;
+                    }
+                }
+                &.cta-para{
+                    margin: 16px 0 25px 0;
+                }
+            }
+            .cta-btn{
+                padding: 10px 30px;
+                background: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                width: max-content;
+                border-radius: $common-radius;
+                color: $btn-primary-color;
+                text-decoration: none;
+                font-size: $font-24;
+                font-weight: bold;
+                @media only screen and (max-width : $tablet){
+                    padding: 10px 0;
+                    width: 100%;
+                    font-size: $font-18;
+                    svg{
+                        height: 24px;
+                        width: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
